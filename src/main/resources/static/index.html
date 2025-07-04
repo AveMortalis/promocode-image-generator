@@ -2,9 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="/style.css">
-    <title>Getting Started: Serving Web Content</title>
+    <title>Электронный сертификат</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <form action="/generate" method="post">
@@ -21,7 +24,7 @@
         </div>
         <div class="currency-abbreviation-holder">
             <label for="currency-abbreviation">Аббревиатура валюты:</label>
-            <select name="currencyAbbreviation" id="currency-abbreviation2">
+            <select name="currencyAbbreviation" id="currency-abbreviation">
                 <option value="$">$</option>
                 <option value="USD">USD</option>
                 <option value="€">€</option>
@@ -30,7 +33,6 @@
                 <option value="₽">₽</option>
                 <option value="RUB">RUB</option>
             </select>
-            <input type="text" id="currency-abbreviation" name="currencyAbbreviation" placeholder="Введите аббревиатуру валюты"></input>
         </div>
         <div class="btn-holder">
             <input class="btn" type="submit" name="Сгенерировать" value="Сгенерировать">
