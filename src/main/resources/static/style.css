@@ -1,0 +1,44 @@
+body{
+    margin:0px;
+}
+.flex-container{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+    column-gap:20px;
+}
+.form-header{
+    width:100%;
+    text-align:center;
+    font-size:34px;
+}
+.promocode-holder, .amount-holder, .currency-abbreviation-holder, .btn-holder{
+    width:100%;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    row-gap:5px;
+}
+.btn{
+    padding:10px 25px;
+    color:white;
+    background-color:black;
+    border:1px solid black;
+    font-size:20px;
+}
+form input[type=text]{
+    width:100%;
+    box-sizing:border-box;
+    padding:5px;
+}
+.cert-image-holder{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+.cert-image{
+    width: calc(100vh*0.6665);
+    max-width: 100vw;
+}

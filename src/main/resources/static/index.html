@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<form action="/generate" method="post">
+<div class="flex-container">
+
+        <div class="form-header">Генерация изображения электронного сертификата</div>
+        <div class="promocode-holder">
+            <label for="promocode">Промокод:</label>
+            <input type="text" id="promocode" name="promocode" placeholder="Введите промокод"></input>
+        </div>
+        <div class="amount-holder">
+            <label for="amount">Сумма:</label>
+            <input type="text" id="amount" name="amount" placeholder="Введите сумму"></input>
+        </div>
+        <div class="currency-abbreviation-holder">
+            <label for="currency-abbreviation">Аббревиатура валюты:</label>
+            <select name="currencyAbbreviation" id="currency-abbreviation2">
+                <option value="$">$</option>
+                <option value="USD">USD</option>
+                <option value="€">€</option>
+                <option value="EUR">EUR</option>
+                <option value="BYN">BYN</option>
+                <option value="₽">₽</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <input type="text" id="currency-abbreviation" name="currencyAbbreviation" placeholder="Введите аббревиатуру валюты"></input>
+        </div>
+        <div class="btn-holder">
+            <input class="btn" type="submit" name="Сгенерировать" value="Сгенерировать">
+        </div>
+
+</div>
+</form>
+</body>
+</html>
