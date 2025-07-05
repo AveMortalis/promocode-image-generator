@@ -36,7 +36,6 @@ public class PromocodeImageGeneratorController {
         byte[] img = imageProcessor.addCertificateDataToBaseImage(mbDigitalCertificateData.promocode(),mbDigitalCertificateData.amount(), mbDigitalCertificateData.currencyAbbreviation()).toByteArray();
         String base64Img = Base64.getEncoder().encodeToString(img);
 
-        ByteArrayResource resource = new ByteArrayResource(imageProcessor.addCertificateDataToBaseImage(mbDigitalCertificateData.promocode(),mbDigitalCertificateData.amount(), mbDigitalCertificateData.currencyAbbreviation()).toByteArray());
         String html = "<!DOCTYPE HTML>\n" +
                 "<html>\n" +
                 "<head>\n" +
