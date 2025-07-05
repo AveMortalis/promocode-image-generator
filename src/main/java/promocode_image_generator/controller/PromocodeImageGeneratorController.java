@@ -32,7 +32,7 @@ public class PromocodeImageGeneratorController {
 
     @PostMapping(value = "/generate", produces = MediaType.TEXT_HTML_VALUE)
     public @ResponseBody String generateCertificateImageUsing(
-            @ModelAttribute MBDigitalCertificateData mbDigitalCertificateData) throws IOException {
+            @ModelAttribute MBDigitalCertificateData mbDigitalCertificateData) {
         byte[] img = imageProcessor.addCertificateDataToBaseImage(mbDigitalCertificateData.promocode(),mbDigitalCertificateData.amount(), mbDigitalCertificateData.currencyAbbreviation()).toByteArray();
         String base64Img = Base64.getEncoder().encodeToString(img);
 
