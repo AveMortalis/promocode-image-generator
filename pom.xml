@@ -66,28 +66,12 @@
 		</dependency>
 	</dependencies>
 
-
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.graalvm.buildtools</groupId>
-				<artifactId>native-maven-plugin</artifactId>
-				<extensions>true</extensions>
-				<executions>
-					<execution>
-						<id>build-native</id>
-						<goals>
-							<goal>compile-no-fork</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<release>21</release>
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
@@ -100,13 +84,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image>
-						<builder>paketobuildpacks/builder-jammy-buildpackless-tiny</builder><!--required for AArch64/M1 support -->
-						<buildpacks>
-							<buildpack>paketobuildpacks/oracle</buildpack>
-							<buildpack>paketobuildpacks/java-native-image</buildpack>
-						</buildpacks>
-					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
